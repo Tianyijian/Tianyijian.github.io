@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianyijian.github.io/"/>
-  <updated>2018-04-05T15:05:00.561Z</updated>
+  <updated>2018-04-05T17:33:38.117Z</updated>
   <id>https://tianyijian.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ubuntu 美化大全</title>
+    <title>Ubuntu wifi 联网问题</title>
+    <link href="https://tianyijian.github.io/2018/04/05/ubuntu-wifi/"/>
+    <id>https://tianyijian.github.io/2018/04/05/ubuntu-wifi/</id>
+    <published>2018-04-05T15:28:52.000Z</published>
+    <updated>2018-04-05T17:33:38.117Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;高高兴兴的装了双系统 Win10 + Ubuntu 16.04 LTS,本来想愉快的开始 &lt;a href=&quot;https://tianyijian.github.io/2018/04/05/ubuntu-beautify/&quot;&gt;Ubuntu 美化&lt;/a&gt;, 结果发现 wifi
+        
+      
+    
+    </summary>
+    
+      <category term="ubuntu" scheme="https://tianyijian.github.io/categories/ubuntu/"/>
+    
+    
+      <category term="ubuntu" scheme="https://tianyijian.github.io/tags/ubuntu/"/>
+    
+      <category term="wifi" scheme="https://tianyijian.github.io/tags/wifi/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu 美化大全</title>
     <link href="https://tianyijian.github.io/2018/04/05/ubuntu-beautify/"/>
     <id>https://tianyijian.github.io/2018/04/05/ubuntu-beautify/</id>
     <published>2018-04-05T13:52:07.000Z</published>
-    <updated>2018-04-05T15:05:00.561Z</updated>
+    <updated>2018-04-05T17:27:55.123Z</updated>
     
     <summary type="html">
     
@@ -99,9 +127,9 @@
     
       <category term="ubuntu" scheme="https://tianyijian.github.io/tags/ubuntu/"/>
     
-      <category term="grub" scheme="https://tianyijian.github.io/tags/grub/"/>
-    
       <category term="beautify" scheme="https://tianyijian.github.io/tags/beautify/"/>
+    
+      <category term="grub" scheme="https://tianyijian.github.io/tags/grub/"/>
     
   </entry>
   

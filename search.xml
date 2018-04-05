@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[ubuntu 美化大全]]></title>
+    <title><![CDATA[Ubuntu wifi 联网问题]]></title>
+    <url>%2F2018%2F04%2F05%2Fubuntu-wifi%2F</url>
+    <content type="text"><![CDATA[高高兴兴的装了双系统 Win10 + Ubuntu 16.04 LTS,本来想愉快的开始 Ubuntu 美化, 结果发现 wifi 都连不上,开玩笑,这要怎么愉快的玩耍呢? 于是研究了研究,成功得解决了新装ubuntu 不能连接 wifi 的问题. 问题点击右上角 WLAN 图标无 wifi Terminal 输入 $ ifconfig, 会发现没有 wlan 选项. 解决在不知道装什么驱动的情况下,推荐使用 ubuntu 原生 wifi 驱动. 将 Ubuntu 和手机用数据线连接,然后共享热点,此时 Ubuntu 即可上网. 更新软件,即在终端输入: $ sudo apt-get update 然后打开 Ubuntu 自带软件 Software &amp; Updates (若不知道如何打开,可按 系统键win 进行搜索), 勾选驱动 Broadcom Corporation: 点击 Apply Changes, 保存退出,重启电脑即可. 输入 $ ifconfig, 即可看到多出了 wlp3so,输入 $ rfkill list,也看到了 Wireless. 意外若重启电脑,发现右上角 WLAN 图标点击后并没有 Enable Wi-Fi 选项, 你需要检查电脑开机时 Bois 选项的 Secure Boot 是否为 Disabled. 原因是专用驱动是闭源的，而ubuntu开源，微软认为“闭源系统是不安全的，所以闭源的软件在开启secure boot的时候不能启用”。 小编使用的华硕电脑,开机出现品牌图标时点击 F2, 即进入 BOIS 界面, Secure Boot 不能更改,将 Secure Boot Control 设为 Disabled 即可.]]></content>
+      <categories>
+        <category>ubuntu</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+        <tag>wifi</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Ubuntu 美化大全]]></title>
     <url>%2F2018%2F04%2F05%2Fubuntu-beautify%2F</url>
-    <content type="text"><![CDATA[新装了 Ubuntu 16.04 ,闲不住的我鼓捣着如何让 ubuntu 更美, 于是多方收集整理, 写了这篇博客以记录自己的美化过程. 更新源设置源为 aliyun,国内访问的速度更快. 然后执行 $ sudo apt-get update $ sudo apt-get upgrade 删除 删除 Amazon 链接$ sudo apt-get remove unity-webapps-common 卸载 LibreOffice$ sudo apt-get remove libreoffice-common 删除不常用软件 $ sudo apt-get remove thunderbird totem rhythmbox empathy brasero simple-scan gnome-mahjongg aisleriot $ sudo apt-get remove gnome-mines cheese transmission-common gnome-orca webbrowser-app gnome-sudoku landscape-client-ui-install $ sudo apt-get remove onboard deja-dup 主题美化 安装 Unity 美化工具$ sudo apt-get install unity-tweak-tool 安装 Flatabulous 主题及图标 sudo add-apt-repository ppa:noobslab/themes sudo apt-get update sudo apt-get install flatabulous-theme sudo add-apt-repository ppa:noobslab/icons sudo apt-get update sudo apt-get install ultra-flat-icons 安装软件 Deb 软件安装命令: $ sudo dpkg -i xxx.deb # 安装 $ sudo apt-get install -f # 解决安装过程中依赖问题 $ sudo dpkg -i xxx.deb # 再次安装 $ sudo apt-get autoremove # 移除无用依赖 安装搜狗输入法参考: install sogou on ubuntu 16.04 安装 WPS http://linux.wps.cn/ 安装谷歌浏览器 https://www.google.com/chrome/ 安装 chrome 插件SwitchyOmega https://github.com/FelisCatus/SwitchyOmega/releases 安装 Shadowsocks $ sudo apt-get install shadowsocks 安装截图工具shutter $ sudo apt-get install shutter 安装 vim $ sudo apt-get install vim 安装 git $ sudo apt-get install git 安装 zsh 及 oh-my-zsh ( Terminal 美化) oh my zsh 官网: http://ohmyz.sh/ $ sudo apt-get install zsh $ sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot; 更换主题请参考: https://github.com/robbyrussell/oh-my-zsh/wiki/Themes 搭建安卓环境 参考: 在Ubuntu搭建安卓开发环境]]></content>
+    <content type="text"><![CDATA[新装了 Ubuntu 16.04 ,闲不住的我鼓捣着如何让 ubuntu 更美, 于是多方收集整理, 写了这篇博客以记录自己的美化过程. 更新源设置源为 aliyun,国内访问的速度更快. 然后执行 $ sudo apt-get update $ sudo apt-get upgrade 删除 删除 Amazon 链接$ sudo apt-get remove unity-webapps-common 卸载 LibreOffice$ sudo apt-get remove libreoffice-common 删除不常用软件 $ sudo apt-get remove thunderbird totem rhythmbox empathy brasero simple-scan gnome-mahjongg aisleriot $ sudo apt-get remove gnome-mines cheese transmission-common gnome-orca webbrowser-app gnome-sudoku landscape-client-ui-install $ sudo apt-get remove onboard deja-dup 主题美化 安装 Unity 美化工具$ sudo apt-get install unity-tweak-tool 安装 Flatabulous 主题及图标 sudo add-apt-repository ppa:noobslab/themes sudo apt-get update sudo apt-get install flatabulous-theme sudo add-apt-repository ppa:noobslab/icons sudo apt-get update sudo apt-get install ultra-flat-icons 安装软件 Deb 软件安装命令: $ sudo dpkg -i xxx.deb # 安装 $ sudo apt-get install -f # 解决安装过程中依赖问题 $ sudo dpkg -i xxx.deb # 再次安装 $ sudo apt-get autoremove # 移除无用依赖 安装搜狗输入法 参考: install sogou on ubuntu 16.04 Ubuntu系统安装搜狗（sougou for linux）输入法详细教程 安装 WPS http://linux.wps.cn/ 安装谷歌浏览器 https://www.google.com/chrome/ 安装 chrome 插件SwitchyOmega https://github.com/FelisCatus/SwitchyOmega/releases 安装 Shadowsocks $ sudo apt-get install shadowsocks 安装截图工具shutter $ sudo apt-get install shutter 安装 vim $ sudo apt-get install vim 安装 git $ sudo apt-get install git 安装 haroopad ( markdown 编辑器) http://pad.haroopress.com/user.html 安装 zsh 及 oh-my-zsh ( Terminal 美化) oh my zsh 官网: http://ohmyz.sh/ $ sudo apt-get install zsh $ sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot; 更换主题请参考: https://github.com/robbyrussell/oh-my-zsh/wiki/Themes 搭建安卓环境 参考: 在Ubuntu搭建安卓开发环境]]></content>
       <categories>
         <category>ubuntu</category>
       </categories>
@@ -33,8 +45,8 @@
       </categories>
       <tags>
         <tag>ubuntu</tag>
-        <tag>grub</tag>
         <tag>beautify</tag>
+        <tag>grub</tag>
       </tags>
   </entry>
   <entry>

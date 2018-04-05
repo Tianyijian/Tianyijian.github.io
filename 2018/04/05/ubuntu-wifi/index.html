@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="ubuntu,beautify," />
+  <meta name="keywords" content="ubuntu,wifi," />
 
 
 
@@ -81,21 +81,25 @@
 
 
 
-<meta name="description" content="刚鼓捣完电脑把 Ubuntu 16.04 的 grub 引导页面给改了,又怎么能放着开机启动页面不管呢?于是小编研究了研究,成功给开机也换上了个酷炫的动画效果.话不多说,来一波操作吧. 选择主题Plymouth Themes 上有许多主题,选择一个,下载到本地.我选择了这个 注意 : 如果你选择的主题文件包含大写,请 跳至注意. 解压安装找到下载文件所在的文件夹,解压之后将其移动到 /usr/sh">
-<meta name="keywords" content="ubuntu,beautify">
+<meta name="description" content="高高兴兴的装了双系统 Win10 + Ubuntu 16.04 LTS,本来想愉快的开始 Ubuntu 美化, 结果发现 wifi 都连不上,开玩笑,这要怎么愉快的玩耍呢? 于是研究了研究,成功得解决了新装ubuntu 不能连接 wifi 的问题. 问题点击右上角 WLAN 图标无 wifi  Terminal 输入 $ ifconfig, 会发现没有 wlan 选项.  解决在不知道装什么驱动的">
+<meta name="keywords" content="ubuntu,wifi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ubuntu 开机动画美化">
-<meta property="og:url" content="https://tianyijian.github.io/2018/04/05/ubuntu-boot-animation/index.html">
+<meta property="og:title" content="Ubuntu wifi 联网问题">
+<meta property="og:url" content="https://tianyijian.github.io/2018/04/05/ubuntu-wifi/index.html">
 <meta property="og:site_name" content="TYJ&#39;s Blog">
-<meta property="og:description" content="刚鼓捣完电脑把 Ubuntu 16.04 的 grub 引导页面给改了,又怎么能放着开机启动页面不管呢?于是小编研究了研究,成功给开机也换上了个酷炫的动画效果.话不多说,来一波操作吧. 选择主题Plymouth Themes 上有许多主题,选择一个,下载到本地.我选择了这个 注意 : 如果你选择的主题文件包含大写,请 跳至注意. 解压安装找到下载文件所在的文件夹,解压之后将其移动到 /usr/sh">
+<meta property="og:description" content="高高兴兴的装了双系统 Win10 + Ubuntu 16.04 LTS,本来想愉快的开始 Ubuntu 美化, 结果发现 wifi 都连不上,开玩笑,这要怎么愉快的玩耍呢? 于是研究了研究,成功得解决了新装ubuntu 不能连接 wifi 的问题. 问题点击右上角 WLAN 图标无 wifi  Terminal 输入 $ ifconfig, 会发现没有 wlan 选项.  解决在不知道装什么驱动的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://tianyijian.github.io/images/ubuntu-boot-animation/01.png">
-<meta property="og:image" content="https://tianyijian.github.io/images/ubuntu-boot-animation/02.png">
-<meta property="og:updated_time" content="2018-04-05T13:44:30.533Z">
+<meta property="og:image" content="https://tianyijian.github.io/images/ubuntu-wifi/01.jpg">
+<meta property="og:image" content="https://tianyijian.github.io/images/ubuntu-wifi/02.png">
+<meta property="og:image" content="https://tianyijian.github.io/images/ubuntu-wifi/03.png">
+<meta property="og:image" content="https://tianyijian.github.io/images/ubuntu-wifi/04.jpg">
+<meta property="og:image" content="https://tianyijian.github.io/images/ubuntu-wifi/05.png">
+<meta property="og:image" content="https://tianyijian.github.io/images/ubuntu-wifi/06.jpg">
+<meta property="og:updated_time" content="2018-04-05T17:33:38.117Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ubuntu 开机动画美化">
-<meta name="twitter:description" content="刚鼓捣完电脑把 Ubuntu 16.04 的 grub 引导页面给改了,又怎么能放着开机启动页面不管呢?于是小编研究了研究,成功给开机也换上了个酷炫的动画效果.话不多说,来一波操作吧. 选择主题Plymouth Themes 上有许多主题,选择一个,下载到本地.我选择了这个 注意 : 如果你选择的主题文件包含大写,请 跳至注意. 解压安装找到下载文件所在的文件夹,解压之后将其移动到 /usr/sh">
-<meta name="twitter:image" content="https://tianyijian.github.io/images/ubuntu-boot-animation/01.png">
+<meta name="twitter:title" content="Ubuntu wifi 联网问题">
+<meta name="twitter:description" content="高高兴兴的装了双系统 Win10 + Ubuntu 16.04 LTS,本来想愉快的开始 Ubuntu 美化, 结果发现 wifi 都连不上,开玩笑,这要怎么愉快的玩耍呢? 于是研究了研究,成功得解决了新装ubuntu 不能连接 wifi 的问题. 问题点击右上角 WLAN 图标无 wifi  Terminal 输入 $ ifconfig, 会发现没有 wlan 选项.  解决在不知道装什么驱动的">
+<meta name="twitter:image" content="https://tianyijian.github.io/images/ubuntu-wifi/01.jpg">
 
 
 
@@ -125,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="https://tianyijian.github.io/2018/04/05/ubuntu-boot-animation/"/>
+  <link rel="canonical" href="https://tianyijian.github.io/2018/04/05/ubuntu-wifi/"/>
 
 
 
 
 
-  <title>Ubuntu 开机动画美化 | TYJ's Blog</title>
+  <title>Ubuntu wifi 联网问题 | TYJ's Blog</title>
   
 
 
@@ -312,7 +316,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tianyijian.github.io/2018/04/05/ubuntu-boot-animation/">
+    <link itemprop="mainEntityOfPage" href="https://tianyijian.github.io/2018/04/05/ubuntu-wifi/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="TYJ">
@@ -329,7 +333,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Ubuntu 开机动画美化</h1>
+          <h1 class="post-title" itemprop="name headline">Ubuntu wifi 联网问题</h1>
         
 
         <div class="post-meta">
@@ -341,7 +345,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-05T19:03:01+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-05T23:28:52+08:00">
                 2018-04-05
               </time>
             
@@ -382,9 +386,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/04/05/ubuntu-boot-animation/#comments" itemprop="discussionUrl">
+                <a href="/2018/04/05/ubuntu-wifi/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/04/05/ubuntu-boot-animation/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/04/05/ubuntu-wifi/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -392,7 +396,7 @@
 
           
           
-             <span id="/2018/04/05/ubuntu-boot-animation/" class="leancloud_visitors" data-flag-title="Ubuntu 开机动画美化">
+             <span id="/2018/04/05/ubuntu-wifi/" class="leancloud_visitors" data-flag-title="Ubuntu wifi 联网问题">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -423,55 +427,31 @@
       
 
       
-        <p>刚鼓捣完电脑把 Ubuntu 16.04 的 grub 引导页面给改了,又怎么能放着开机启动页面不管呢?于是小编研究了研究,成功给开机也换上了个酷炫的动画效果.话不多说,来一波操作吧.</p>
-<h2 id="选择主题"><a href="#选择主题" class="headerlink" title="选择主题"></a>选择主题</h2><p><a href="https://www.gnome-look.org/browse/cat/108/ord/latest/" target="_blank" rel="noopener">Plymouth Themes</a> 上有许多主题,选择一个,下载到本地.我选择了这个<br><img src="/images/ubuntu-boot-animation/01.png" alt=""></p>
-<p><strong>注意 :</strong> 如果你选择的主题文件包含大写,请 <a href="#attention">跳至注意</a>.<br><span id="install"></span></p>
-<h2 id="解压安装"><a href="#解压安装" class="headerlink" title="解压安装"></a>解压安装</h2><p>找到下载文件所在的文件夹,解压之后将其移动到 <code>/usr/share/plymouth/themes</code> 文件夹中,然后安装.</p>
-<pre><code>$ tar zvxf Paw-Ubuntu-Floral.tar.gz               
-$ sudo cp -r Paw-Ubuntu-Floral /usr/share/plymouth/themes 
-$ sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/Paw-Ubuntu-Floral/Paw-Ubuntu-Floral.plymouth 100
-</code></pre><h2 id="更改配置"><a href="#更改配置" class="headerlink" title="更改配置"></a>更改配置</h2><p>使用命令更改 default.plymouth 主题文件,输入数字选择刚才的主题</p>
-<pre><code>$ sudo update-alternatives --config default.plymouth
-</code></pre><p><img src="/images/ubuntu-boot-animation/02.png" alt=""></p>
-<h2 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h2><p>更改完成之后我们查看 default.plymouth 文件:</p>
-<pre><code>[Plymouth Theme]
-Name=Paw Ubuntu/Mint Floral theme
-Description=Paw Ubuntu/Mint Floral plymouth theme
-ModuleName=script
-
-[script]
-ImageDir=/usr/share/plymouth/themes/Paw-Ubuntu-Floral
-ScriptFile=/usr/share/plymouth/themes/Paw-Ubuntu-Floral/mdv.script
-</code></pre><p>其实就是 <code>ImageDir</code> 和 <code>ScriptFile</code> 进行了更改,因此在上边更改配置时不想用命令的可以直接手动在这里更改.</p>
-<h2 id="保存"><a href="#保存" class="headerlink" title="保存"></a>保存</h2><p>重新生成镜像文件,然后就开机试试吧.</p>
-<pre><code>$ sudo update-initramfs -u
-</code></pre><p>如果此过程中报如下的错,是因为 xxx.plymouth 内容中有 <code>/lib/share</code>.</p>
-<pre><code>W: plymouth module (/usr/lib/x86_64-linux-gnu/plymouth//.so) missing, skipping that theme.
-</code></pre><p>请参考下边 <a href="#attention">注意</a> 中的第二条.</p>
-<p><span id="attention"></span></p>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>若文件夹含有大小写,请确保主题文件夹名称,其中的 xxx.plymouth,以及其中的内容大小写一致.<br>如我的文件夹是 <code>Paw-Ubuntu-Floral</code>, 其中有 <code>paw-ubuntu-floral.plymouth</code> 文件,其中的内容是</p>
-<pre><code>[Plymouth Theme]
-Name=Paw Ubuntu/Mint Floral theme
-Description=Paw Ubuntu/Mint Floral plymouth theme
-ModuleName=script
-
-[script]
-ImageDir=/lib/plymouth/themes/Paw-Ubuntu-Floral
-ScriptFile=/lib/plymouth/themes/Paw-Ubuntu-Floral/mdv.script
-</code></pre><ol>
-<li><p>发现其中的 <code>paw-ubuntu-floral.plymouth</code> 为小写,将其改为大写,以和其它两项保持一致.</p>
-<p> <code>$ sudo mv paw-ubuntu-floral.plymouth Paw-Ubuntu-Floral.plymouth</code></p>
+        <p>高高兴兴的装了双系统 Win10 + Ubuntu 16.04 LTS,本来想愉快的开始 <a href="https://tianyijian.github.io/2018/04/05/ubuntu-beautify/">Ubuntu 美化</a>, 结果发现 wifi 都连不上,开玩笑,这要怎么愉快的玩耍呢? 于是研究了研究,成功得解决了新装ubuntu 不能连接 wifi 的问题.</p>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>点击右上角 <code>WLAN</code> 图标无 wifi</p>
+<p><img src="/images/ubuntu-wifi/01.jpg" width="100px" height="100px"></p>
+<p>Terminal 输入 <code>$ ifconfig</code>, 会发现没有 <code>wlan</code> 选项.</p>
+<p><img src="/images/ubuntu-wifi/02.png" width="50%" height="50%"></p>
+<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>在不知道装什么驱动的情况下,推荐使用 ubuntu 原生 wifi 驱动. </p>
+<ol>
+<li>将 Ubuntu 和手机用数据线连接,然后共享热点,此时 Ubuntu 即可上网.</li>
+<li>更新软件,即在终端输入: <code>$ sudo apt-get update</code></li>
+<li><p>然后打开 Ubuntu 自带软件 Software &amp; Updates (若不知道如何打开,可按 系统键win 进行搜索), 勾选驱动 <code>Broadcom Corporation</code>:</p>
+<p> <img src="/images/ubuntu-wifi/03.png" width="50%" height="50%"></p>
 </li>
-<li><p>xxx.plymouth 内容中有 <code>/lib/plymouth</code>, Ubuntu 16.04 以后该文件夹已经改为了 <code>/usr/share</code>, 因此将其改为</p>
-<p> <code>ImageDir=/usr/share/plymouth/themes/Paw-Ubuntu-Floral</code><br> <code>ScriptFile=/usr/share/plymouth/themes/Paw-Ubuntu-Floral/mdv.script</code></p>
+<li><p>点击 <code>Apply Changes</code>, 保存退出,重启电脑即可.</p>
+<p> <img src="/images/ubuntu-wifi/04.jpg" width="100px" height="150px"></p>
+</li>
+<li><p>输入 <code>$ ifconfig</code>, 即可看到多出了 <code>wlp3so</code>,输入 <code>$ rfkill list</code>,也看到了 <code>Wireless</code>.</p>
+<p> <img src="/images/ubuntu-wifi/05.png" width="50%" height="50%"></p>
 </li>
 </ol>
-<p>更改之后继续进行 <a href="#install">安装配置</a> 即可.</p>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
-<li><a href="https://www.sysgeek.cn/change-boot-splash-screen-ubuntu/" target="_blank" rel="noopener">如何更改Ubuntu或Linux Mint开机启动画面</a></li>
-<li><a href="https://askubuntu.com/questions/775301/unable-to-use-a-custom-splash-screen-in-ubuntu-16-04lts" target="_blank" rel="noopener">Unable to use a custom splash screen in Ubuntu 16.04LTS</a></li>
-<li><a href="http://persevere.iteye.com/blog/1479524" target="_blank" rel="noopener">在Ubuntu中通过update-alternatives切换软件版本</a></li>
-</ol>
+<h2 id="意外"><a href="#意外" class="headerlink" title="意外"></a>意外</h2><p>若重启电脑,发现右上角 <code>WLAN</code> 图标点击后并没有 <code>Enable Wi-Fi</code> 选项, 你需要检查电脑开机时 <code>Bois</code> 选项的 <code>Secure Boot</code> 是否为 <code>Disabled</code>. </p>
+<blockquote>
+<p>原因是专用驱动是闭源的，而ubuntu开源，微软认为“闭源系统是不安全的，所以闭源的软件在开启secure boot的时候不能启用”。</p>
+</blockquote>
+<p>小编使用的华硕电脑,开机出现品牌图标时点击 F2, 即进入 BOIS 界面, <code>Secure Boot</code> 不能更改,将 <code>Secure Boot Control</code> 设为 <code>Disabled</code> 即可.</p>
+<p><img src="/images/ubuntu-wifi/06.jpg" width="50%" height="50%"></p>
 
       
     </div>
@@ -515,7 +495,7 @@ ScriptFile=/lib/plymouth/themes/Paw-Ubuntu-Floral/mdv.script
           
             <a href="/tags/ubuntu/" rel="tag"># ubuntu</a>
           
-            <a href="/tags/beautify/" rel="tag"># beautify</a>
+            <a href="/tags/wifi/" rel="tag"># wifi</a>
           
         </div>
       
@@ -528,8 +508,8 @@ ScriptFile=/lib/plymouth/themes/Paw-Ubuntu-Floral/mdv.script
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/05/ubuntu-grub-beautify/" rel="next" title="Ubuntu grub 引导界面美化">
-                <i class="fa fa-chevron-left"></i> Ubuntu grub 引导界面美化
+              <a href="/2018/04/05/ubuntu-beautify/" rel="next" title="Ubuntu 美化大全">
+                <i class="fa fa-chevron-left"></i> Ubuntu 美化大全
               </a>
             
           </div>
@@ -537,10 +517,6 @@ ScriptFile=/lib/plymouth/themes/Paw-Ubuntu-Floral/mdv.script
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/05/ubuntu-beautify/" rel="prev" title="Ubuntu 美化大全">
-                Ubuntu 美化大全 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -721,7 +697,7 @@ ScriptFile=/lib/plymouth/themes/Paw-Ubuntu-Floral/mdv.script
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#选择主题"><span class="nav-number">1.</span> <span class="nav-text">选择主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解压安装"><span class="nav-number">2.</span> <span class="nav-text">解压安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更改配置"><span class="nav-number">3.</span> <span class="nav-text">更改配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看"><span class="nav-number">4.</span> <span class="nav-text">查看</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#保存"><span class="nav-number">5.</span> <span class="nav-text">保存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意"><span class="nav-number">6.</span> <span class="nav-text">注意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">7.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决"><span class="nav-number">2.</span> <span class="nav-text">解决</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#意外"><span class="nav-number">3.</span> <span class="nav-text">意外</span></a></li></ol></div>
             
 
           </div>
@@ -891,9 +867,9 @@ ScriptFile=/lib/plymouth/themes/Paw-Ubuntu-Floral/mdv.script
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://tianyijian.github.io/2018/04/05/ubuntu-boot-animation/';
-          this.page.identifier = '2018/04/05/ubuntu-boot-animation/';
-          this.page.title = 'Ubuntu 开机动画美化';
+          this.page.url = 'https://tianyijian.github.io/2018/04/05/ubuntu-wifi/';
+          this.page.identifier = '2018/04/05/ubuntu-wifi/';
+          this.page.title = 'Ubuntu wifi 联网问题';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://tyj.disqus.com/embed.js';
