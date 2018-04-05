@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianyijian.github.io/"/>
-  <updated>2018-04-05T13:37:51.517Z</updated>
+  <updated>2018-04-05T15:05:00.561Z</updated>
   <id>https://tianyijian.github.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ubuntu 美化大全</title>
+    <link href="https://tianyijian.github.io/2018/04/05/ubuntu-beautify/"/>
+    <id>https://tianyijian.github.io/2018/04/05/ubuntu-beautify/</id>
+    <published>2018-04-05T13:52:07.000Z</published>
+    <updated>2018-04-05T15:05:00.561Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;新装了 Ubuntu 16.04 ,闲不住的我鼓捣着如何让 ubuntu 更美, 于是多方收集整理, 写了这篇博客以记录自己的美化过程.&lt;/p&gt;
+&lt;h2 id=&quot;更新源&quot;&gt;&lt;a href=&quot;#更新源&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="ubuntu" scheme="https://tianyijian.github.io/categories/ubuntu/"/>
+    
+    
+      <category term="ubuntu" scheme="https://tianyijian.github.io/tags/ubuntu/"/>
+    
+      <category term="beautify" scheme="https://tianyijian.github.io/tags/beautify/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Ubuntu 开机动画美化</title>
     <link href="https://tianyijian.github.io/2018/04/05/ubuntu-boot-animation/"/>
     <id>https://tianyijian.github.io/2018/04/05/ubuntu-boot-animation/</id>
     <published>2018-04-05T11:03:01.000Z</published>
-    <updated>2018-04-05T13:37:51.517Z</updated>
+    <updated>2018-04-05T13:44:30.533Z</updated>
     
     <summary type="html">
     
