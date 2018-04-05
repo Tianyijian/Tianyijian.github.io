@@ -92,7 +92,7 @@
 <meta property="og:image" content="https://tianyijian.github.io/images/hexo-next-theme-set/01.png">
 <meta property="og:image" content="https://tianyijian.github.io/images/hexo-next-theme-set/02.png">
 <meta property="og:image" content="https://tianyijian.github.io/images/hexo-next-theme-set/03.png">
-<meta property="og:updated_time" content="2018-04-05T03:41:26.597Z">
+<meta property="og:updated_time" content="2018-04-05T05:10:08.950Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo + Next 配置个性主题">
 <meta name="twitter:description" content="成功搭建 Hexo 博客之后,如何配置使自己的博客更加的美观呢?本文介绍了 Hexo 主题更换,主题配置,图标更改,撰写博客,评论集成,阅读次数记录等等内容,跟着小编一起让自己的博客更加美观吧! 主题更换Hexo 主题多样,在 Hexo官方主题 里有很多推荐,选择你喜欢的一款,相应的 github 仓库都会有具体的安装介绍. 主题的安装以及配置基本上差不多,小编选择的是 NexT主题,下面就以其为">
@@ -425,15 +425,15 @@
 
       
         <p>成功搭建 Hexo 博客之后,如何配置使自己的博客更加的美观呢?<br>本文介绍了 Hexo 主题更换,主题配置,图标更改,撰写博客,评论集成,阅读次数记录等等内容,跟着小编一起让自己的博客更加美观吧!</p>
-<h3 id="主题更换"><a href="#主题更换" class="headerlink" title="主题更换"></a>主题更换</h3><p>Hexo 主题多样,在 <a href="&quot;https://hexo.io/themes/&quot;">Hexo官方主题</a> 里有很多推荐,选择你喜欢的一款,相应的 github 仓库都会有具体的安装介绍. 主题的安装以及配置基本上差不多,小编选择的是 <a href="&quot;https://github.com/iissnan/hexo-theme-next&quot;">NexT主题</a>,下面就以其为例进行介绍.</p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p><a href="&quot;https://github.com/iissnan/hexo-theme-next&quot;">Next 主页</a> 有各种版本的安装过程, 下边是选取的稳定版本的安装.切换到你的 Hexo 根目录.</p>
+<h3 id="主题更换"><a href="#主题更换" class="headerlink" title="主题更换"></a>主题更换</h3><p>Hexo 主题多样,在 <a href="https://hexo.io/themes/" target="_blank" rel="noopener">Hexo官方主题</a> 里有很多推荐,选择你喜欢的一款,相应的 github 仓库都会有具体的安装介绍. 主题的安装以及配置基本上差不多,小编选择的是 <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">NexT主题</a>,下面就以其为例进行介绍.</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">Next 主页</a> 有各种版本的安装过程, 下边是选取的稳定版本的安装.切换到你的 Hexo 根目录.</p>
 <pre><code>$ cd Hexo/blog
 $ ls
 _config.yml  node_modules  package.json  public  scaffolds source  themes
 </code></pre><p>执行命令</p>
 <pre><code>$ mkdir themes/next
 $ curl -s https://api.github.com/repos/iissnan/hexo-theme-next/releases/latest | grep tarball_url | cut -d &apos;&quot;&apos; -f 4 | wget -i - -O- | tar -zx -C themes/next --strip-components=1
-</code></pre><p>成功安装后,我们需更改 Hexo 的配置文件, 即 <code>Hexo/blog/_config.yml</code>, 以后我们称其为 站点配置文件,它的各项参数可参考 <a href="&quot;https://hexo.io/zh-cn/docs/configuration.html&quot;">Hexo 配置文件</a>.<br>你需更改参数<code>theme: landscape</code> 为 <code>theme: next</code>,除此之外我又做了如下修改:</p>
+</code></pre><p>成功安装后,我们需更改 Hexo 的配置文件, 即 <code>Hexo/blog/_config.yml</code>, 以后我们称其为 站点配置文件,它的各项参数可参考 <a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">Hexo 配置文件</a>.<br>你需更改参数<code>theme: landscape</code> 为 <code>theme: next</code>,除此之外我又做了如下修改:</p>
 <pre><code>title: TYJ&apos;s Blog
 subtitle: study for fun
 description: 心与竹俱空 念同山共静
@@ -469,7 +469,7 @@ tags:
 <pre><code>avatar: /images/avatar.png
 </code></pre><h4 id="背景特效设置"><a href="#背景特效设置" class="headerlink" title="背景特效设置"></a>背景特效设置</h4><p>Next 主题自带了几种非常优美得背景特效, 在主题配置文件中可以找到.<br><code>canvas_nest</code> <code>three_waves</code> <code>canvas_lines</code> <code>canvas_sphere</code><br>你只需将某个设为 <code>true</code> 即可.</p>
 <p><img src="/images/hexo-next-theme-set/03.png" alt=""></p>
-<h4 id="阅读次数统计"><a href="#阅读次数统计" class="headerlink" title="阅读次数统计"></a>阅读次数统计</h4><p>小编使用了leancloud进行次数统计,它的注册你可以参考<a href="&quot;https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud&quot;">为 Next 主题添加阅读次数统计功能</a>, 现在的 Next 主题已经接入了leancloud, 只需在 主题配置文件中做修改即可:</p>
+<h4 id="阅读次数统计"><a href="#阅读次数统计" class="headerlink" title="阅读次数统计"></a>阅读次数统计</h4><p>小编使用了leancloud进行次数统计,它的注册你可以参考<a href="https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud" target="_blank" rel="noopener">为 Next 主题添加阅读次数统计功能</a>, 现在的 Next 主题已经接入了leancloud, 只需在 主题配置文件中做修改即可:</p>
 <pre><code># Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
@@ -482,11 +482,11 @@ disqus:
   enable: true
   shortname: your_short_name
   count: true
-</code></pre><h4 id="其他配置"><a href="#其他配置" class="headerlink" title="其他配置"></a>其他配置</h4><p><a href="&quot;http://theme-next.iissnan.com/theme-settings.html&quot;">Next 主题配置</a> 中提供了许多其他的配置,诸如 标签页面, 打赏功能, 公益404页面等,也介绍了许多 <a href="&quot;http://theme-next.iissnan.com/third-party-services.html#local-search&quot;">第三方服务集成</a>, 你可以进行配置.</p>
+</code></pre><h4 id="其他配置"><a href="#其他配置" class="headerlink" title="其他配置"></a>其他配置</h4><p><a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="noopener">Next 主题配置</a> 中提供了许多其他的配置,诸如 标签页面, 打赏功能, 公益404页面等,也介绍了许多 <a href="http://theme-next.iissnan.com/third-party-services.html#local-search" target="_blank" rel="noopener">第三方服务集成</a>, 你可以进行配置.</p>
 <h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ol>
-<li><a href="&quot;https://brightloong.github.io/2017/02/25/Hexo-Github%E5%BB%BA%E7%AB%99%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E9%85%8D%E7%BD%AE/&quot;">Hexo+Github搭建个人博客(二)——配置&amp;主题</a></li>
-<li><a href="&quot;h手把手教你使用Hexo + Github Pages搭建个人独立博客ttps://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/&quot;">手把手教你使用Hexo + Github Pages搭建个人独立博客</a></li>
-<li><a href="&quot;http://theme-next.iissnan.com/&quot;">Next 官方使用文档</a></li>
+<li><a href="https://brightloong.github.io/2017/02/25/Hexo-Github%E5%BB%BA%E7%AB%99%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E9%85%8D%E7%BD%AE/" target="_blank" rel="noopener">Hexo+Github搭建个人博客(二)——配置&amp;主题</a></li>
+<li><a href="https://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/" target="_blank" rel="noopener">手把手教你使用Hexo + Github Pages搭建个人独立博客</a></li>
+<li><a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">Next 官方使用文档</a></li>
 </ol>
 
       
