@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>TYJ&#39;s Blog</title>
+  
+  <subtitle>study for fun</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://tianyijian.github.io/"/>
+  <updated>2018-04-05T02:34:09.355Z</updated>
+  <id>https://tianyijian.github.io/</id>
+  
+  <author>
+    <name>TYJ</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo + Next 配置个性主题</title>
+    <link href="https://tianyijian.github.io/2018/04/05/hexo-next-theme-set/"/>
+    <id>https://tianyijian.github.io/2018/04/05/hexo-next-theme-set/</id>
+    <published>2018-04-04T16:51:38.000Z</published>
+    <updated>2018-04-05T02:34:09.355Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;成功搭建 Hexo 博客之后,如何配置使自己的博客更加的美观呢?&lt;br&gt;本文介绍了 Hexo 主题更换,主题配置,图标更改,撰写博客,评论集成,阅读次数记录等等内容,跟着小编一起让自己的博客更加美观吧!&lt;/p&gt;
+&lt;h3 id=&quot;主题更换&quot;&gt;&lt;a href=&quot;#主题更换&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="https://tianyijian.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://tianyijian.github.io/tags/Hexo/"/>
+    
+      <category term="Blog" scheme="https://tianyijian.github.io/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo + Github 搭建个人博客</title>
+    <link href="https://tianyijian.github.io/2018/03/26/hexo-github-blog/"/>
+    <id>https://tianyijian.github.io/2018/03/26/hexo-github-blog/</id>
+    <published>2018-03-26T14:34:50.000Z</published>
+    <updated>2018-04-04T17:15:37.921Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;小白的成长之路，使用 &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt; + &lt;a href=&quot;&amp;quot;https://github.com&amp;quot;&quot;&gt;Github&lt;/a&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="https://tianyijian.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://tianyijian.github.io/tags/Hexo/"/>
+    
+      <category term="Blog" scheme="https://tianyijian.github.io/tags/Blog/"/>
+    
+  </entry>
+  
+</feed>
