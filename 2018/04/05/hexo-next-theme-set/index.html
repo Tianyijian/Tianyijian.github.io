@@ -89,14 +89,14 @@
 <meta property="og:site_name" content="TYJ&#39;s Blog">
 <meta property="og:description" content="成功搭建 Hexo 博客之后,如何配置使自己的博客更加的美观呢?本文介绍了 Hexo 主题更换,主题配置,图标更改,撰写博客,评论集成,阅读次数记录等等内容,跟着小编一起让自己的博客更加美观吧! 主题更换Hexo 主题多样,在 Hexo官方主题 里有很多推荐,选择你喜欢的一款,相应的 github 仓库都会有具体的安装介绍. 主题的安装以及配置基本上差不多,小编选择的是 NexT主题,下面就以其为">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://tianyijian.github.io/2018/04/05/images/hexo-next-theme-set/01.png">
-<meta property="og:image" content="https://tianyijian.github.io/2018/04/05/images/hexo-next-theme-set/02.png">
-<meta property="og:image" content="https://tianyijian.github.io/2018/04/05/images/hexo-next-theme-set/03.png">
-<meta property="og:updated_time" content="2018-04-05T03:29:06.803Z">
+<meta property="og:image" content="https://tianyijian.github.io/images/hexo-next-theme-set/01.png">
+<meta property="og:image" content="https://tianyijian.github.io/images/hexo-next-theme-set/02.png">
+<meta property="og:image" content="https://tianyijian.github.io/images/hexo-next-theme-set/03.png">
+<meta property="og:updated_time" content="2018-04-05T03:41:26.597Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo + Next 配置个性主题">
 <meta name="twitter:description" content="成功搭建 Hexo 博客之后,如何配置使自己的博客更加的美观呢?本文介绍了 Hexo 主题更换,主题配置,图标更改,撰写博客,评论集成,阅读次数记录等等内容,跟着小编一起让自己的博客更加美观吧! 主题更换Hexo 主题多样,在 Hexo官方主题 里有很多推荐,选择你喜欢的一款,相应的 github 仓库都会有具体的安装介绍. 主题的安装以及配置基本上差不多,小编选择的是 NexT主题,下面就以其为">
-<meta name="twitter:image" content="https://tianyijian.github.io/2018/04/05/images/hexo-next-theme-set/01.png">
+<meta name="twitter:image" content="https://tianyijian.github.io/images/hexo-next-theme-set/01.png">
 
 
 
@@ -440,7 +440,7 @@ description: 心与竹俱空 念同山共静
 author: TYJ
 language: zh-Hans
 url: http://tianyijian.github.io
-</code></pre><p>保存退出,运行 <code>hexo s</code>,浏览器打开 <code>http://localhost:4000</code>, 此时即可看到新配置的优美博客了.<br><img src="../images/hexo-next-theme-set/01.png" alt=""></p>
+</code></pre><p>保存退出,运行 <code>hexo s</code>,浏览器打开 <code>http://localhost:4000</code>, 此时即可看到新配置的优美博客了.<br><img src="/images/hexo-next-theme-set/01.png" alt=""></p>
 <p>另外注意的是 Next 主题本身即有四个小主题, 在主题的配置文件, 即 <code>themes/next/_config.yml</code>, 以后称其为 主题配置文件 , 中可进行切换.</p>
 <pre><code># Schemes
 #scheme: Muse
@@ -456,7 +456,7 @@ date: 2018-04-04 23:38:59
 tags:
 ---
 ## This is my first blog!
-</code></pre><p>保存退出,依次执行 <code>hexo g</code> <code>hexo s</code>, 即可在 <code>http://localhost:4000</code>查看,当然,也可以接着执行 <code>hexo d</code> 推送到你的 github 上, 在 <code>https://user-name.github.io</code> 上查看.<br><img src="../images/hexo-next-theme-set/02.png" alt=""></p>
+</code></pre><p>保存退出,依次执行 <code>hexo g</code> <code>hexo s</code>, 即可在 <code>http://localhost:4000</code>查看,当然,也可以接着执行 <code>hexo d</code> 推送到你的 github 上, 在 <code>https://user-name.github.io</code> 上查看.<br><img src="/images/hexo-next-theme-set/02.png" alt=""></p>
 <h3 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h3><h4 id="设置阅读原文"><a href="#设置阅读原文" class="headerlink" title="设置阅读原文"></a>设置阅读原文</h4><p>我们发现原有的博客 Hello World 是打开的,那么怎么让每篇博客默认打开一部分,显示出阅读原文呢?<br>找到 主题 Next 的配置文件, 即 <code>themes/next/_config.yml</code>, 以后称其为 主题配置文件. 找到 <code>auto_excerpt</code> ,将其设为 <code>true</code>.</p>
 <pre><code>auto_excerpt:
       enable: true
@@ -468,7 +468,7 @@ tags:
 </code></pre><h4 id="更改侧栏头像"><a href="#更改侧栏头像" class="headerlink" title="更改侧栏头像"></a>更改侧栏头像</h4><p>选择一张喜欢的图片 <code>avatar.png</code>, 放在 <code>/themes/source/images</code> 中, 在 主题配置文件中 作如下设置.</p>
 <pre><code>avatar: /images/avatar.png
 </code></pre><h4 id="背景特效设置"><a href="#背景特效设置" class="headerlink" title="背景特效设置"></a>背景特效设置</h4><p>Next 主题自带了几种非常优美得背景特效, 在主题配置文件中可以找到.<br><code>canvas_nest</code> <code>three_waves</code> <code>canvas_lines</code> <code>canvas_sphere</code><br>你只需将某个设为 <code>true</code> 即可.</p>
-<p><img src="../images/hexo-next-theme-set/03.png" alt=""></p>
+<p><img src="/images/hexo-next-theme-set/03.png" alt=""></p>
 <h4 id="阅读次数统计"><a href="#阅读次数统计" class="headerlink" title="阅读次数统计"></a>阅读次数统计</h4><p>小编使用了leancloud进行次数统计,它的注册你可以参考<a href="&quot;https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud&quot;">为 Next 主题添加阅读次数统计功能</a>, 现在的 Next 主题已经接入了leancloud, 只需在 主题配置文件中做修改即可:</p>
 <pre><code># Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
@@ -553,6 +553,10 @@ disqus:
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/05/ubuntu-grub-beautify/" rel="prev" title="Ubuntu grub 引导界面美化">
+                Ubuntu grub 引导界面美化 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -643,7 +647,7 @@ disqus:
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -654,7 +658,7 @@ disqus:
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -665,7 +669,7 @@ disqus:
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Ubuntu grub 引导界面美化]]></title>
+    <url>%2F2018%2F04%2F05%2Fubuntu-grub-beautify%2F</url>
+    <content type="text"><![CDATA[小编近来鼓捣电脑, 装了双系统 win10 + Ubuntu 16.04, 忍不住开机时 ubuntu 自带的 grub 引导界面,就是选择进入系统的那个界面. 于是翻腾好久, 终于将它美化了下. 一点体会许多博客上都推荐使用 burg,一个可以替代 grub 的引导程序.但是小编试了好久也没有成功,这里收集了几篇指导,感兴趣的可以尝试.如果你成功了,希望不吝赐教: 如何在Ubuntu 16.04上用BURG Boot Loader替换GRUB Ubuntu14.04引导界面美化（burg） 我的方法我是采用了直接更换 grub 主题的方式,比较简单. 选择主题GRUB Themes 上有许多漂亮的主题,挑选一个,并下载到本地.比如我选择了这个: 解压安装找到下载文件所在文件夹:]]></content>
+      <categories>
+        <category>ubuntu</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+        <tag>grub</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo + Next 配置个性主题]]></title>
     <url>%2F2018%2F04%2F05%2Fhexo-next-theme-set%2F</url>
     <content type="text"><![CDATA[成功搭建 Hexo 博客之后,如何配置使自己的博客更加的美观呢?本文介绍了 Hexo 主题更换,主题配置,图标更改,撰写博客,评论集成,阅读次数记录等等内容,跟着小编一起让自己的博客更加美观吧! 主题更换Hexo 主题多样,在 Hexo官方主题 里有很多推荐,选择你喜欢的一款,相应的 github 仓库都会有具体的安装介绍. 主题的安装以及配置基本上差不多,小编选择的是 NexT主题,下面就以其为例进行介绍. 安装Next 主页 有各种版本的安装过程, 下边是选取的稳定版本的安装.切换到你的 Hexo 根目录. $ cd Hexo/blog $ ls _config.yml node_modules package.json public scaffolds source themes 执行命令 $ mkdir themes/next $ curl -s https://api.github.com/repos/iissnan/hexo-theme-next/releases/latest | grep tarball_url | cut -d &apos;&quot;&apos; -f 4 | wget -i - -O- | tar -zx -C themes/next --strip-components=1 成功安装后,我们需更改 Hexo 的配置文件, 即 Hexo/blog/_config.yml, 以后我们称其为 站点配置文件,它的各项参数可参考 Hexo 配置文件.你需更改参数theme: landscape 为 theme: next,除此之外我又做了如下修改: title: TYJ&apos;s Blog subtitle: study for fun description: 心与竹俱空 念同山共静 author: TYJ language: zh-Hans url: http://tianyijian.github.io 保存退出,运行 hexo s,浏览器打开 http://localhost:4000, 此时即可看到新配置的优美博客了. 另外注意的是 Next 主题本身即有四个小主题, 在主题的配置文件, 即 themes/next/_config.yml, 以后称其为 主题配置文件 , 中可进行切换. # Schemes #scheme: Muse scheme: Mist #scheme: Pisces #scheme: Gemini 撰写推文更换了新的主题,你是否好奇如何写一篇新的文章呢? $ hexo new &quot;FirstBlog&quot; 新建的博客位于 Hexo/blog/source/_posts/FirstBlog.md, 并且有了简单的格式.写博客需要了解 markdown 语法, 你可以以后学习. 这里我简单写了一句话 --- title: FirstBlog date: 2018-04-04 23:38:59 tags: --- ## This is my first blog! 保存退出,依次执行 hexo g hexo s, 即可在 http://localhost:4000查看,当然,也可以接着执行 hexo d 推送到你的 github 上, 在 https://user-name.github.io 上查看. 主题配置设置阅读原文我们发现原有的博客 Hello World 是打开的,那么怎么让每篇博客默认打开一部分,显示出阅读原文呢?找到 主题 Next 的配置文件, 即 themes/next/_config.yml, 以后称其为 主题配置文件. 找到 auto_excerpt ,将其设为 true. auto_excerpt: enable: true length: 150 更改网站图标选择一张你喜欢的图片命名为 favicon.ico, 放在 新建的Hexo/blog/source/images 文件夹下. 然后在 主题配置文件 中作如下更改 ( 名字可任意,对应即可 ): favicon: small: images/favicon.ico medium: images/favicon.ico 更改侧栏头像选择一张喜欢的图片 avatar.png, 放在 /themes/source/images 中, 在 主题配置文件中 作如下设置. avatar: /images/avatar.png 背景特效设置Next 主题自带了几种非常优美得背景特效, 在主题配置文件中可以找到.canvas_nest three_waves canvas_lines canvas_sphere你只需将某个设为 true 即可. 阅读次数统计小编使用了leancloud进行次数统计,它的注册你可以参考为 Next 主题添加阅读次数统计功能, 现在的 Next 主题已经接入了leancloud, 只需在 主题配置文件中做修改即可: # Show number of visitors to each article. # You can visit https://leancloud.cn get AppID and AppKey. leancloud_visitors: enable: true app_id: your_app_id app_key: your_app_key 集成评论系统目前小编使用的 diuqus 评论,同样的,强大的 Next 主题也接入了这个功能, 在主题配置文件中作如下修改: # Disqus disqus: enable: true shortname: your_short_name count: true 其他配置Next 主题配置 中提供了许多其他的配置,诸如 标签页面, 打赏功能, 公益404页面等,也介绍了许多 第三方服务集成, 你可以进行配置. 参考资料 Hexo+Github搭建个人博客(二)——配置&amp;主题 手把手教你使用Hexo + Github Pages搭建个人独立博客 Next 官方使用文档]]></content>

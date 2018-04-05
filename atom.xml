@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianyijian.github.io/"/>
-  <updated>2018-04-05T03:29:06.803Z</updated>
+  <updated>2018-04-05T04:11:58.723Z</updated>
   <id>https://tianyijian.github.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Ubuntu grub 引导界面美化</title>
+    <link href="https://tianyijian.github.io/2018/04/05/ubuntu-grub-beautify/"/>
+    <id>https://tianyijian.github.io/2018/04/05/ubuntu-grub-beautify/</id>
+    <published>2018-04-05T03:35:51.000Z</published>
+    <updated>2018-04-05T04:11:58.723Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;小编近来鼓捣电脑, 装了双系统 win10 + Ubuntu 16.04, 忍不住开机时 ubuntu 自带的 grub 引导界面,就是选择进入系统的那个界面. 于是翻腾好久, 终于将它美化了下.&lt;/p&gt;
+&lt;h2 id=&quot;一点体会&quot;&gt;&lt;a href=&quot;#一点体会&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="ubuntu" scheme="https://tianyijian.github.io/categories/ubuntu/"/>
+    
+    
+      <category term="ubuntu" scheme="https://tianyijian.github.io/tags/ubuntu/"/>
+    
+      <category term="grub" scheme="https://tianyijian.github.io/tags/grub/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo + Next 配置个性主题</title>
     <link href="https://tianyijian.github.io/2018/04/05/hexo-next-theme-set/"/>
     <id>https://tianyijian.github.io/2018/04/05/hexo-next-theme-set/</id>
     <published>2018-04-04T16:51:38.000Z</published>
-    <updated>2018-04-05T03:29:06.803Z</updated>
+    <updated>2018-04-05T03:41:26.597Z</updated>
     
     <summary type="html">
     
@@ -50,7 +79,7 @@
     <link href="https://tianyijian.github.io/2018/03/26/hexo-github-blog/"/>
     <id>https://tianyijian.github.io/2018/03/26/hexo-github-blog/</id>
     <published>2018-03-26T14:34:50.000Z</published>
-    <updated>2018-04-05T03:25:08.543Z</updated>
+    <updated>2018-04-05T04:13:41.037Z</updated>
     
     <summary type="html">
     
@@ -58,7 +87,7 @@
       
         
         
-          &lt;p&gt;小白的成长之路，使用 &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt; + &lt;a href=&quot;&amp;quot;https://github.com&amp;quot;&quot;&gt;Github&lt;/a&gt;
+          &lt;p&gt;小白的成长之路，使用 &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt; + &lt;a href=&quot;https://github.com&quot; target=&quot;_blank&quot;
         
       
     
