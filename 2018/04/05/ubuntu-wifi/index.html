@@ -81,13 +81,13 @@
 
 
 
-<meta name="description" content="高高兴兴的装了双系统 Win10 + Ubuntu 16.04 LTS,本来想愉快的开始 Ubuntu 美化, 结果发现 wifi 都连不上,开玩笑,这要怎么愉快的玩耍呢? 于是研究了研究,成功得解决了新装ubuntu 不能连接 wifi 的问题. 问题点击右上角 WLAN 图标无 wifi  Terminal 输入 $ ifconfig, 会发现没有 wlan 选项.  解决在不知道装什么驱动的">
+<meta name="description" content="高高兴兴的装了双系统 Win10 + Ubuntu 16.04 LTS,本来想愉快的开始 Ubuntu 美化, 结果发现 wifi 都连不上,开玩笑,这要怎么愉快的玩耍呢? 于是研究了研究,成功得解决了新装 ubuntu 不能连接 wifi 的问题. 问题点击右上角 WLAN 图标无 wifi  Terminal 输入 $ ifconfig, 会发现没有 wlan 选项.  解决在不知道装什么驱动">
 <meta name="keywords" content="ubuntu,wifi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu wifi 联网问题">
 <meta property="og:url" content="https://tianyijian.github.io/2018/04/05/ubuntu-wifi/index.html">
 <meta property="og:site_name" content="TYJ&#39;s Blog">
-<meta property="og:description" content="高高兴兴的装了双系统 Win10 + Ubuntu 16.04 LTS,本来想愉快的开始 Ubuntu 美化, 结果发现 wifi 都连不上,开玩笑,这要怎么愉快的玩耍呢? 于是研究了研究,成功得解决了新装ubuntu 不能连接 wifi 的问题. 问题点击右上角 WLAN 图标无 wifi  Terminal 输入 $ ifconfig, 会发现没有 wlan 选项.  解决在不知道装什么驱动的">
+<meta property="og:description" content="高高兴兴的装了双系统 Win10 + Ubuntu 16.04 LTS,本来想愉快的开始 Ubuntu 美化, 结果发现 wifi 都连不上,开玩笑,这要怎么愉快的玩耍呢? 于是研究了研究,成功得解决了新装 ubuntu 不能连接 wifi 的问题. 问题点击右上角 WLAN 图标无 wifi  Terminal 输入 $ ifconfig, 会发现没有 wlan 选项.  解决在不知道装什么驱动">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://tianyijian.github.io/images/ubuntu-wifi/01.jpg">
 <meta property="og:image" content="https://tianyijian.github.io/images/ubuntu-wifi/02.png">
@@ -95,10 +95,10 @@
 <meta property="og:image" content="https://tianyijian.github.io/images/ubuntu-wifi/04.jpg">
 <meta property="og:image" content="https://tianyijian.github.io/images/ubuntu-wifi/05.png">
 <meta property="og:image" content="https://tianyijian.github.io/images/ubuntu-wifi/06.jpg">
-<meta property="og:updated_time" content="2018-04-05T17:36:09.991Z">
+<meta property="og:updated_time" content="2018-04-06T02:32:20.568Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu wifi 联网问题">
-<meta name="twitter:description" content="高高兴兴的装了双系统 Win10 + Ubuntu 16.04 LTS,本来想愉快的开始 Ubuntu 美化, 结果发现 wifi 都连不上,开玩笑,这要怎么愉快的玩耍呢? 于是研究了研究,成功得解决了新装ubuntu 不能连接 wifi 的问题. 问题点击右上角 WLAN 图标无 wifi  Terminal 输入 $ ifconfig, 会发现没有 wlan 选项.  解决在不知道装什么驱动的">
+<meta name="twitter:description" content="高高兴兴的装了双系统 Win10 + Ubuntu 16.04 LTS,本来想愉快的开始 Ubuntu 美化, 结果发现 wifi 都连不上,开玩笑,这要怎么愉快的玩耍呢? 于是研究了研究,成功得解决了新装 ubuntu 不能连接 wifi 的问题. 问题点击右上角 WLAN 图标无 wifi  Terminal 输入 $ ifconfig, 会发现没有 wlan 选项.  解决在不知道装什么驱动">
 <meta name="twitter:image" content="https://tianyijian.github.io/images/ubuntu-wifi/01.jpg">
 
 
@@ -427,12 +427,15 @@
       
 
       
-        <p>高高兴兴的装了双系统 Win10 + Ubuntu 16.04 LTS,本来想愉快的开始 <a href="https://tianyijian.github.io/2018/04/05/ubuntu-beautify/">Ubuntu 美化</a>, 结果发现 wifi 都连不上,开玩笑,这要怎么愉快的玩耍呢? 于是研究了研究,成功得解决了新装ubuntu 不能连接 wifi 的问题.</p>
+        <p>高高兴兴的装了双系统 Win10 + Ubuntu 16.04 LTS,本来想愉快的开始 <a href="https://tianyijian.github.io/2018/04/05/ubuntu-beautify/">Ubuntu 美化</a>, 结果发现 wifi 都连不上,开玩笑,这要怎么愉快的玩耍呢? 于是研究了研究,成功得解决了新装 ubuntu 不能连接 wifi 的问题.</p>
 <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>点击右上角 <code>WLAN</code> 图标无 wifi</p>
 <p><img src="/images/ubuntu-wifi/01.jpg" width="120px" height="120px"></p>
 <p>Terminal 输入 <code>$ ifconfig</code>, 会发现没有 <code>wlan</code> 选项.</p>
 <p><img src="/images/ubuntu-wifi/02.png" width="50%" height="50%"></p>
 <h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>在不知道装什么驱动的情况下,推荐使用 ubuntu 原生 wifi 驱动. </p>
+<blockquote>
+<p>可以先尝试步骤3,4,若无则从步骤1开始.</p>
+</blockquote>
 <ol>
 <li>将 Ubuntu 和手机用数据线连接,然后共享热点,此时 Ubuntu 即可上网.</li>
 <li>更新软件,即在终端输入: <code>$ sudo apt-get update</code></li>
@@ -446,11 +449,11 @@
 <p> <img src="/images/ubuntu-wifi/05.png" width="50%" height="50%"></p>
 </li>
 </ol>
-<h2 id="意外"><a href="#意外" class="headerlink" title="意外"></a>意外</h2><p>若重启电脑,发现右上角 <code>WLAN</code> 图标点击后并没有 <code>Enable Wi-Fi</code> 选项, 你需要检查电脑开机时 <code>Bois</code> 选项的 <code>Secure Boot</code> 是否为 <code>Disabled</code>. </p>
+<h2 id="意外"><a href="#意外" class="headerlink" title="意外"></a>意外</h2><p>若重启电脑,发现右上角 <code>WLAN</code> 图标点击后并没有 <code>Enable Wi-Fi</code> 选项, 你需要检查电脑开机时 <code>BIOS</code> 界面的 <code>Secure Boot</code> 是否为 <code>Disabled</code>. </p>
 <blockquote>
-<p>原因是专用驱动是闭源的，而ubuntu开源，微软认为“闭源系统是不安全的，所以闭源的软件在开启secure boot的时候不能启用”。</p>
+<p>原因是专用驱动是闭源的，而ubuntu开源，微软认为“闭源系统是不安全的”，所以闭源的软件在开启 <code>secure boot</code> 的时候不能启用。</p>
 </blockquote>
-<p>小编使用的华硕电脑,开机出现品牌图标时点击 F2, 即进入 BOIS 界面, <code>Secure Boot</code> 不能更改,将 <code>Secure Boot Control</code> 设为 <code>Disabled</code> 即可.</p>
+<p>小编使用的华硕电脑,开机出现品牌 logo 时点击 F2, 即进入 BIOS 界面, <code>Secure Boot</code> 不能更改,将 <code>Secure Boot Control</code> 设为 <code>Disabled</code> 即可.</p>
 <p><img src="/images/ubuntu-wifi/06.jpg" width="50%" height="50%"></p>
 
       
@@ -508,8 +511,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/05/ubuntu-beautify/" rel="next" title="Ubuntu 美化大全">
-                <i class="fa fa-chevron-left"></i> Ubuntu 美化大全
+              <a href="/2018/04/05/ubuntu-beautify/" rel="next" title="Ubuntu 美化手册">
+                <i class="fa fa-chevron-left"></i> Ubuntu 美化手册
               </a>
             
           </div>
