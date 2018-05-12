@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="ubuntu,beautify," />
+  <meta name="keywords" content="maven,java," />
 
 
 
@@ -83,20 +83,18 @@
 
 
 
-<meta name="description" content="新装了 Ubuntu 16.04 ,闲不住的我鼓捣着如何让 ubuntu 更美, 于是多方收集整理, 写了这篇博客以记录自己的美化过程. 更新源设置源为 aliyun,国内访问的速度更快.  然后执行 $ sudo apt-get update $ sudo apt-get upgrade 删除 删除 Amazon 链接$ sudo apt-get remove unity-webapps-com">
-<meta name="keywords" content="ubuntu,beautify">
+<meta name="description" content="大家可能经常使用 eclipse 写 java 项目，那么怎么检验项目在脱离 eclipse 环境时依旧能成功运行呢？今天我想要介绍的就是使用 Maven 构建项目，将一步一步的带领大家进行 java 项目的构建。  概要本文为系列文章第一篇，主要介绍了 Maven 的安装配置，命令的简单使用，pom.xml 的简单理解，jar包的运行，以及为 jar 包指定主类的问题，主要是基础方面的使用。 安">
+<meta name="keywords" content="maven,java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ubuntu 美化手册">
-<meta property="og:url" content="https://tianyijian.github.io/2018/04/05/ubuntu-beautify/index.html">
+<meta property="og:title" content="Maven 构建 java 项目（一）">
+<meta property="og:url" content="https://tianyijian.github.io/2018/05/12/maven-buid-java/index.html">
 <meta property="og:site_name" content="TYJ&#39;s Blog">
-<meta property="og:description" content="新装了 Ubuntu 16.04 ,闲不住的我鼓捣着如何让 ubuntu 更美, 于是多方收集整理, 写了这篇博客以记录自己的美化过程. 更新源设置源为 aliyun,国内访问的速度更快.  然后执行 $ sudo apt-get update $ sudo apt-get upgrade 删除 删除 Amazon 链接$ sudo apt-get remove unity-webapps-com">
+<meta property="og:description" content="大家可能经常使用 eclipse 写 java 项目，那么怎么检验项目在脱离 eclipse 环境时依旧能成功运行呢？今天我想要介绍的就是使用 Maven 构建项目，将一步一步的带领大家进行 java 项目的构建。  概要本文为系列文章第一篇，主要介绍了 Maven 的安装配置，命令的简单使用，pom.xml 的简单理解，jar包的运行，以及为 jar 包指定主类的问题，主要是基础方面的使用。 安">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://tianyijian.github.io/images/ubuntu-beautify/01.png">
-<meta property="og:updated_time" content="2018-05-08T10:16:58.168Z">
+<meta property="og:updated_time" content="2018-05-12T03:24:45.820Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ubuntu 美化手册">
-<meta name="twitter:description" content="新装了 Ubuntu 16.04 ,闲不住的我鼓捣着如何让 ubuntu 更美, 于是多方收集整理, 写了这篇博客以记录自己的美化过程. 更新源设置源为 aliyun,国内访问的速度更快.  然后执行 $ sudo apt-get update $ sudo apt-get upgrade 删除 删除 Amazon 链接$ sudo apt-get remove unity-webapps-com">
-<meta name="twitter:image" content="https://tianyijian.github.io/images/ubuntu-beautify/01.png">
+<meta name="twitter:title" content="Maven 构建 java 项目（一）">
+<meta name="twitter:description" content="大家可能经常使用 eclipse 写 java 项目，那么怎么检验项目在脱离 eclipse 环境时依旧能成功运行呢？今天我想要介绍的就是使用 Maven 构建项目，将一步一步的带领大家进行 java 项目的构建。  概要本文为系列文章第一篇，主要介绍了 Maven 的安装配置，命令的简单使用，pom.xml 的简单理解，jar包的运行，以及为 jar 包指定主类的问题，主要是基础方面的使用。 安">
 
 
 
@@ -126,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="https://tianyijian.github.io/2018/04/05/ubuntu-beautify/"/>
+  <link rel="canonical" href="https://tianyijian.github.io/2018/05/12/maven-buid-java/"/>
 
 
 
 
 
-  <title>Ubuntu 美化手册 | TYJ's Blog</title>
+  <title>Maven 构建 java 项目（一） | TYJ's Blog</title>
   
 
 
@@ -313,7 +311,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tianyijian.github.io/2018/04/05/ubuntu-beautify/">
+    <link itemprop="mainEntityOfPage" href="https://tianyijian.github.io/2018/05/12/maven-buid-java/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="TYJ">
@@ -330,7 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Ubuntu 美化手册</h1>
+          <h1 class="post-title" itemprop="name headline">Maven 构建 java 项目（一）</h1>
         
 
         <div class="post-meta">
@@ -342,8 +340,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-05T21:52:07+08:00">
-                2018-04-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-12T11:15:52+08:00">
+                2018-05-12
               </time>
             
 
@@ -365,8 +363,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ubuntu/" itemprop="url" rel="index">
-                    <span itemprop="name">ubuntu</span>
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
                   </a>
                 </span>
 
@@ -383,9 +381,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/04/05/ubuntu-beautify/#comments" itemprop="discussionUrl">
+                <a href="/2018/05/12/maven-buid-java/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/04/05/ubuntu-beautify/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/05/12/maven-buid-java/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -393,7 +391,7 @@
 
           
           
-             <span id="/2018/04/05/ubuntu-beautify/" class="leancloud_visitors" data-flag-title="Ubuntu 美化手册">
+             <span id="/2018/05/12/maven-buid-java/" class="leancloud_visitors" data-flag-title="Maven 构建 java 项目（一）">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -424,82 +422,117 @@
       
 
       
-        <p>新装了 Ubuntu 16.04 ,闲不住的我鼓捣着如何让 ubuntu 更美, 于是多方收集整理, 写了这篇博客以记录自己的美化过程.</p>
-<h2 id="更新源"><a href="#更新源" class="headerlink" title="更新源"></a>更新源</h2><p>设置源为 <code>aliyun</code>,国内访问的速度更快.</p>
-<p><img src="/images/ubuntu-beautify/01.png" alt=""></p>
-<p>然后执行</p>
-<pre><code>$ sudo apt-get update
-$ sudo apt-get upgrade
-</code></pre><h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><ul>
-<li>删除 Amazon 链接<pre><code>$ sudo apt-get remove unity-webapps-common
-</code></pre></li>
-<li>卸载 LibreOffice<pre><code>$ sudo apt-get remove libreoffice-common  
-</code></pre></li>
-<li><p>删除不常用软件</p>
-<pre><code>$ sudo apt-get remove thunderbird totem rhythmbox empathy brasero simple-scan gnome-mahjongg aisleriot  
+        <p>大家可能经常使用 eclipse 写 java 项目，那么怎么检验项目在脱离 eclipse 环境时依旧能成功运行呢？今天我想要介绍的就是使用 Maven 构建项目，将一步一步的带领大家进行 java 项目的构建。 </p>
+<h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><p>本文为系列文章第一篇，主要介绍了 Maven 的安装配置，命令的简单使用，pom.xml 的简单理解，jar包的运行，以及为 jar 包指定主类的问题，主要是基础方面的使用。</p>
+<h2 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p><a href="http://apache.osuosl.org/maven/maven-3/3.5.3/binaries/" target="_blank" rel="noopener">Maven官方下载地址</a> </p>
+<p>我是Win10系统，下载了 <code>apache-maven-3.5.3-bin.zip</code>，解压会得到 <code>apache-maven-3.5.3</code> 文件夹。</p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>我将其移动到了 <code>C:\Program Files\</code> 下，接着需配置环境变量 。</p>
+<p>添加位置： <code>控制面板-&gt;系统和安全-&gt;系统-&gt;高级系统设置-&gt;环境变量-&gt;系统变量-&gt;Path</code>，在其中添加一项 <code>C:\Program Files\apache-maven-3.5.3\bin</code>，保存设置。</p>
+<h3 id="检验"><a href="#检验" class="headerlink" title="检验"></a>检验</h3><p>在命令行中输入 <code>mvn --version</code>，会看到打印的版本信息。</p>
+<h2 id="初始构建"><a href="#初始构建" class="headerlink" title="初始构建"></a>初始构建</h2><p>可参考： <a href="https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html" target="_blank" rel="noopener">Maven Documentation -&gt; Maven in 5 Minutes</a></p>
+<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><pre><code>mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+//快速构建maven项目，分别指定了groupId， artifactId， 构建类型， 并关闭交互模式。
+//简化起见，后四个参数可省略，构建时会采用交互模式，提示用户输入相关信息。
+mvn compile    //项目编译
+mvn test    //进行测试文件的测试
+mvn package    //打包，生成可运行jar包，其会同时执行 compile 与 test 命令。
+mvn clean     //打包后会生成 target 文件夹，该命令删除 target 文件夹。
+</code></pre><h3 id="初始项目"><a href="#初始项目" class="headerlink" title="初始项目"></a>初始项目</h3><p>选择一个位置，在命令行中执行命令 <code>mvn archetype:generate</code>，比如我选择在桌面。执行过程中，前两次暂停可直接回车跳过，第三次即开始提示输入 <code>groupId</code>、<code>artifactId</code>等，我的输入如下，后面的则直接回车跳过即可。</p>
+<pre><code>Define value for property &apos;groupId&apos;: com.mycompany.app
+Define value for property &apos;artifactId&apos;: my-app
+Define value for property &apos;version&apos; 1.0-SNAPSHOT: :
+Define value for property &apos;package&apos; com.mycompany.app: :
+</code></pre><p>提示完成之后，会在桌面生成 <code>my-app</code> 文件夹，其采用默认的项目目录结构，如下：</p>
+<pre><code>my-app
+|-- pom.xml
+`-- src
+    |-- main
+    |   `-- java
+    |       `-- com
+    |           `-- mycompany
+    |               `-- app
+    |                   `-- App.java
+    `-- test
+        `-- java
+            `-- com
+                `-- mycompany
+                    `-- app
+                        `-- AppTest.java
+</code></pre><p><code>pom.xml</code> 即为配置文件，想对build进行设置，即需更改此文件。其所在的目录称为根目录。你可以在根目录下尝试 <code>mvn compile</code>、<code>mvn test</code>、<code>mvn package</code>、<code>mvn clean</code>等操作，看看对新生成的 <code>target</code> 目录分别有什么影响。</p>
+<h3 id="pom-文件"><a href="#pom-文件" class="headerlink" title="pom 文件"></a>pom 文件</h3><p>生成的pom文件主要如下，可能会有所差别，但是标签大致都差不多，需要注意的是标签的结构，哪个在哪个里边，以后修改的时候要找对位置。<br>可参考文档：<br><a href="https://maven.apache.org/guides/introduction/introduction-to-the-pom.html" target="_blank" rel="noopener">Maven doc：Introduction to the POM</a><br><a href="https://maven.apache.org/guides/getting-started/index.html" target="_blank" rel="noopener">Maven doc：Getting Started Guide</a></p>
+<pre><code>&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+  xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+  &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
 
-$ sudo apt-get remove gnome-mines cheese transmission-common gnome-orca webbrowser-app gnome-sudoku  landscape-client-ui-install  
+  &lt;groupId&gt;com.mycompany.app&lt;/groupId&gt;
+  &lt;artifactId&gt;my-app&lt;/artifactId&gt;
+  &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
 
-$ sudo apt-get remove onboard deja-dup
-</code></pre></li>
-</ul>
-<h2 id="主题美化"><a href="#主题美化" class="headerlink" title="主题美化"></a>主题美化</h2><ul>
-<li>安装 Unity 美化工具<pre><code>$ sudo apt-get install unity-tweak-tool
-</code></pre></li>
-<li><p>安装 Flatabulous 主题及图标</p>
-<pre><code>sudo add-apt-repository ppa:noobslab/themes
-sudo apt-get update
-sudo apt-get install flatabulous-theme
+  &lt;name&gt;my-app&lt;/name&gt;
+  &lt;!-- FIXME change it to the project&apos;s website --&gt;
+  &lt;url&gt;http://www.example.com&lt;/url&gt;
 
-sudo add-apt-repository ppa:noobslab/icons
-sudo apt-get update
-sudo apt-get install ultra-flat-icons
-</code></pre></li>
-</ul>
-<h2 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h2><ul>
-<li><p>Deb 软件安装命令:</p>
-<pre><code>$ sudo dpkg -i xxx.deb     # 安装
-$ sudo apt-get install -f  # 解决安装过程中依赖问题
-$ sudo dpkg -i xxx.deb     # 再次安装
-$ sudo apt-get autoremove  # 移除无用依赖
-</code></pre></li>
-<li><p>安装搜狗输入法</p>
-<p>  <code>参考:</code> </p>
-<ol>
-<li><a href="https://icbd.github.io/wiki/tool/2016/10/21/install-sogou-on-ubuntu-16.04.html" target="_blank" rel="noopener">install sogou on ubuntu 16.04</a></li>
-<li><a href="https://blog.csdn.net/leijiezhang/article/details/53707181" target="_blank" rel="noopener"> Ubuntu系统安装搜狗（sougou for linux）输入法详细教程 </a></li>
-</ol>
-</li>
-<li><p>安装 WPS<br>  <a href="http://linux.wps.cn/" target="_blank" rel="noopener">http://linux.wps.cn/</a></p>
-</li>
-<li><p>安装谷歌浏览器<br>   <a href="https://www.google.com/chrome/" target="_blank" rel="noopener">https://www.google.com/chrome/</a></p>
-</li>
-<li><p>安装 chrome 插件SwitchyOmega<br>  <a href="https://github.com/FelisCatus/SwitchyOmega/releases" target="_blank" rel="noopener">https://github.com/FelisCatus/SwitchyOmega/releases</a></p>
-</li>
-<li><p>安装 Shadowsocks<br>  <code>$ sudo apt-get install shadowsocks</code>    </p>
-</li>
-</ul>
+  &lt;properties&gt;
+    &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+    &lt;maven.compiler.source&gt;1.7&lt;/maven.compiler.source&gt;
+    &lt;maven.compiler.target&gt;1.7&lt;/maven.compiler.target&gt;
+  &lt;/properties&gt;
+
+  &lt;dependencies&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;junit&lt;/groupId&gt;
+      &lt;artifactId&gt;junit&lt;/artifactId&gt;
+      &lt;version&gt;4.11&lt;/version&gt;
+      &lt;scope&gt;test&lt;/scope&gt;
+    &lt;/dependency&gt;
+  &lt;/dependencies&gt;
+
+  &lt;build&gt;
+    &lt;pluginManagement&gt;&lt;!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) --&gt;
+      &lt;plugins&gt;
+        &lt;plugin&gt;
+              ...
+        &lt;/plugin&gt;
+      &lt;/plugins&gt;
+    &lt;/pluginManagement&gt;
+  &lt;/build&gt;
+&lt;/project&gt;
+</code></pre><h2 id="jar-包运行"><a href="#jar-包运行" class="headerlink" title="jar 包运行"></a>jar 包运行</h2><p>在成功执行打包操作之后，你会发现 <code>target</code> 目录下生成了可执行的 jar 包，那么怎么运行呢？</p>
 <ul>
-<li><p>安装截图工具shutter<br>  <code>$ sudo apt-get install shutter</code></p>
+<li><p>不含主类的 jar 包运行</p>
+<p>  目前项目即为这种情况，并没指定 jar 包的主类，就是第一个要执行的类。此时需将 jar 包作为环境依赖，先 <code>cd</code> 进入 <code>target</code> 目录，执行命令如下:</p>
+<pre><code>java -cp my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+</code></pre><p>  控制台会打印 <code>Hello World!</code>，即意味着你的 jar 包生成成功，本次项目构建成功。</p>
+<blockquote>
+<p>注意：最后一个参数即为你要执行的类以及路径，不能使用类名的全称 <code>App.java</code>。</p>
+</blockquote>
 </li>
-<li><p>安装 vim<br>  <code>$ sudo apt-get install vim</code></p>
-</li>
-<li><p>安装 git<br>  <code>$ sudo apt-get install git</code></p>
-</li>
-<li><p>安装 haroopad ( markdown 编辑器)<br>  <a href="http://pad.haroopress.com/user.html" target="_blank" rel="noopener">http://pad.haroopress.com/user.html</a></p>
-</li>
-<li><p>安装 gedit 插件<br>  <code>$ sudo apt-get install gedit-plugins</code><br>  <code>资料:</code> <a href="https://help.gnome.org/users/gedit/stable/index.html.en" target="_blank" rel="noopener">gedit 帮助文档</a></p>
-</li>
-<li><p>安装 zsh 及 oh-my-zsh ( Terminal 美化)<br>  <code>oh my zsh 官网:</code>  <a href="http://ohmyz.sh/" target="_blank" rel="noopener">http://ohmyz.sh/</a></p>
-<pre><code>$ sudo apt-get install zsh
-$ sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
-</code></pre><p>  <code>更换主题请参考:</code> <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Themes" target="_blank" rel="noopener">https://github.com/robbyrussell/oh-my-zsh/wiki/Themes</a></p>
-</li>
-<li><p>搭建安卓环境<br>  <code>参考:</code> <a href="https://mp.weixin.qq.com/s?__biz=MzA5MzI3NjE2MA==&amp;mid=2650241459&amp;idx=1&amp;sn=2eb599250040589bd33aa8bb3ef5aba8&amp;chksm=886388dcbf1401ca5a98e7d4464c3b232190432871fa18633da8ea8aa2189418a159852ac21a&amp;mpshare=1&amp;scene=23&amp;srcid=10141CibC1UFXmKqkp9uzZIf#rd" target="_blank" rel="noopener">在Ubuntu搭建安卓开发环境</a></p>
-</li>
-<li><p>安装 QQ<br>  <code>参考:</code> <a href="https://tianyijian.github.io/2018/05/08/ubuntu-use-qq/">Ubuntu 使用 QQ</a></p>
-</li>
+<li><p>含主类的 jar 包运行</p>
+<p>  直接执行 jar 包即可，我们在后面会介绍如何设置主类。</p>
+<pre><code>java -jar my-app-1.0-SNAPSHOT.jar 
+</code></pre></li>
 </ul>
+<h2 id="添加主类"><a href="#添加主类" class="headerlink" title="添加主类"></a>添加主类</h2><p>如何为 jar 文件设置主类呢？在 <code>pom.xml</code> 相应标签下进行如下配置：</p>
+<pre><code>&lt;!-- add mainClass --&gt;
+&lt;build&gt;
+  &lt;plugins&gt;
+    &lt;plugin&gt;
+      &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+      &lt;artifactId&gt;maven-jar-plugin&lt;/artifactId&gt;
+      &lt;configuration&gt;
+        &lt;archive&gt;
+          &lt;manifest&gt;
+            &lt;addClasspath&gt;true&lt;/addClasspath&gt;
+            &lt;mainClass&gt;com.mycompany.app.App&lt;/mainClass&gt;  &lt;!-- App.java 即为主类名--&gt;
+          &lt;/manifest&gt;
+        &lt;/archive&gt; 
+      &lt;/configuration&gt;
+    &lt;/plugin&gt;
+  &lt;/plugins&gt;
+&lt;/build&gt;
+</code></pre><p>成功生成 jar 包之后，照上边介绍的运行即可看到输出 <code>Hello World!</code>。</p>
+<pre><code>java -jar my-app-1.0-SNAPSHOT.jar 
+</code></pre><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这一篇主要对如何使用 maven 进行简单的项目构建，较为基础，也往往不能满足项目的基本需求。下一篇就将要针对常见的问题进行解决，比如尝试解决了项目目录不是 Maven 默认目录的问题 ，编码不可映射问题，以及使用多个外部 jar 的问题。</p>
 
       
     </div>
@@ -541,9 +574,9 @@ $ sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/
       
         <div class="post-tags">
           
-            <a href="/tags/ubuntu/" rel="tag"># ubuntu</a>
+            <a href="/tags/maven/" rel="tag"># maven</a>
           
-            <a href="/tags/beautify/" rel="tag"># beautify</a>
+            <a href="/tags/java/" rel="tag"># java</a>
           
         </div>
       
@@ -556,8 +589,8 @@ $ sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/05/ubuntu-boot-animation/" rel="next" title="Ubuntu 开机动画美化">
-                <i class="fa fa-chevron-left"></i> Ubuntu 开机动画美化
+              <a href="/2018/05/08/ubuntu-use-qq/" rel="next" title="Ubuntu 使用 QQ">
+                <i class="fa fa-chevron-left"></i> Ubuntu 使用 QQ
               </a>
             
           </div>
@@ -565,10 +598,6 @@ $ sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/05/ubuntu-wifi/" rel="prev" title="Ubuntu wifi 联网问题">
-                Ubuntu wifi 联网问题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -749,7 +778,7 @@ $ sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#更新源"><span class="nav-number">1.</span> <span class="nav-text">更新源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除"><span class="nav-number">2.</span> <span class="nav-text">删除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题美化"><span class="nav-number">3.</span> <span class="nav-text">主题美化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装软件"><span class="nav-number">4.</span> <span class="nav-text">安装软件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概要"><span class="nav-number">1.</span> <span class="nav-text">概要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装配置"><span class="nav-number">2.</span> <span class="nav-text">安装配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载"><span class="nav-number">2.1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">2.2.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#检验"><span class="nav-number">2.3.</span> <span class="nav-text">检验</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始构建"><span class="nav-number">3.</span> <span class="nav-text">初始构建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用命令"><span class="nav-number">3.1.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始项目"><span class="nav-number">3.2.</span> <span class="nav-text">初始项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pom-文件"><span class="nav-number">3.3.</span> <span class="nav-text">pom 文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jar-包运行"><span class="nav-number">4.</span> <span class="nav-text">jar 包运行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加主类"><span class="nav-number">5.</span> <span class="nav-text">添加主类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">6.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
@@ -919,9 +948,9 @@ $ sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://tianyijian.github.io/2018/04/05/ubuntu-beautify/';
-          this.page.identifier = '2018/04/05/ubuntu-beautify/';
-          this.page.title = 'Ubuntu 美化手册';
+          this.page.url = 'https://tianyijian.github.io/2018/05/12/maven-buid-java/';
+          this.page.identifier = '2018/05/12/maven-buid-java/';
+          this.page.title = 'Maven 构建 java 项目（一）';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://tyj.disqus.com/embed.js';
