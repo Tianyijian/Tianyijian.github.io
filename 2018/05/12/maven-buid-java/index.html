@@ -83,18 +83,18 @@
 
 
 
-<meta name="description" content="大家可能经常使用 eclipse 写 java 项目，那么怎么检验项目在脱离 eclipse 环境时依旧能成功运行呢？今天我想要介绍的就是使用 Maven 构建项目，将一步一步的带领大家进行 java 项目的构建。  概要本文为系列文章第一篇，主要介绍了 Maven 的安装配置，命令的简单使用，pom.xml 的简单理解，jar包的运行，以及为 jar 包指定主类的问题，主要是基础方面的使用。 安">
+<meta name="description" content="大家可能经常使用 eclipse 写 java 项目，那么怎么检验项目在脱离 eclipse 环境时依旧能成功运行呢？今天我想要介绍的就是使用 Maven 构建项目，将一步一步的带领大家进行 java 项目的构建。  概要本文为系列文章第一篇，主要介绍了 Maven 的安装配置，命令的简单使用，pom.xml 的简单理解，jar包的运行，以及为 jar 包指定主类的问题，都是基础方面的使用。 安装">
 <meta name="keywords" content="maven,java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Maven 构建 java 项目（一）">
 <meta property="og:url" content="https://tianyijian.github.io/2018/05/12/maven-buid-java/index.html">
 <meta property="og:site_name" content="TYJ&#39;s Blog">
-<meta property="og:description" content="大家可能经常使用 eclipse 写 java 项目，那么怎么检验项目在脱离 eclipse 环境时依旧能成功运行呢？今天我想要介绍的就是使用 Maven 构建项目，将一步一步的带领大家进行 java 项目的构建。  概要本文为系列文章第一篇，主要介绍了 Maven 的安装配置，命令的简单使用，pom.xml 的简单理解，jar包的运行，以及为 jar 包指定主类的问题，主要是基础方面的使用。 安">
+<meta property="og:description" content="大家可能经常使用 eclipse 写 java 项目，那么怎么检验项目在脱离 eclipse 环境时依旧能成功运行呢？今天我想要介绍的就是使用 Maven 构建项目，将一步一步的带领大家进行 java 项目的构建。  概要本文为系列文章第一篇，主要介绍了 Maven 的安装配置，命令的简单使用，pom.xml 的简单理解，jar包的运行，以及为 jar 包指定主类的问题，都是基础方面的使用。 安装">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-12T03:24:45.820Z">
+<meta property="og:updated_time" content="2018-05-19T01:02:17.716Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Maven 构建 java 项目（一）">
-<meta name="twitter:description" content="大家可能经常使用 eclipse 写 java 项目，那么怎么检验项目在脱离 eclipse 环境时依旧能成功运行呢？今天我想要介绍的就是使用 Maven 构建项目，将一步一步的带领大家进行 java 项目的构建。  概要本文为系列文章第一篇，主要介绍了 Maven 的安装配置，命令的简单使用，pom.xml 的简单理解，jar包的运行，以及为 jar 包指定主类的问题，主要是基础方面的使用。 安">
+<meta name="twitter:description" content="大家可能经常使用 eclipse 写 java 项目，那么怎么检验项目在脱离 eclipse 环境时依旧能成功运行呢？今天我想要介绍的就是使用 Maven 构建项目，将一步一步的带领大家进行 java 项目的构建。  概要本文为系列文章第一篇，主要介绍了 Maven 的安装配置，命令的简单使用，pom.xml 的简单理解，jar包的运行，以及为 jar 包指定主类的问题，都是基础方面的使用。 安装">
 
 
 
@@ -423,7 +423,7 @@
 
       
         <p>大家可能经常使用 eclipse 写 java 项目，那么怎么检验项目在脱离 eclipse 环境时依旧能成功运行呢？今天我想要介绍的就是使用 Maven 构建项目，将一步一步的带领大家进行 java 项目的构建。 </p>
-<h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><p>本文为系列文章第一篇，主要介绍了 Maven 的安装配置，命令的简单使用，pom.xml 的简单理解，jar包的运行，以及为 jar 包指定主类的问题，主要是基础方面的使用。</p>
+<h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><p>本文为系列文章第一篇，主要介绍了 Maven 的安装配置，命令的简单使用，pom.xml 的简单理解，jar包的运行，以及为 jar 包指定主类的问题，都是基础方面的使用。</p>
 <h2 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p><a href="http://apache.osuosl.org/maven/maven-3/3.5.3/binaries/" target="_blank" rel="noopener">Maven官方下载地址</a> </p>
 <p>我是Win10系统，下载了 <code>apache-maven-3.5.3-bin.zip</code>，解压会得到 <code>apache-maven-3.5.3</code> 文件夹。</p>
 <h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>我将其移动到了 <code>C:\Program Files\</code> 下，接着需配置环境变量 。</p>
@@ -532,7 +532,7 @@ Define value for property &apos;package&apos; com.mycompany.app: :
 &lt;/build&gt;
 </code></pre><p>成功生成 jar 包之后，照上边介绍的运行即可看到输出 <code>Hello World!</code>。</p>
 <pre><code>java -jar my-app-1.0-SNAPSHOT.jar 
-</code></pre><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这一篇主要对如何使用 maven 进行简单的项目构建，较为基础，也往往不能满足项目的基本需求。下一篇就将要针对常见的问题进行解决，比如尝试解决了项目目录不是 Maven 默认目录的问题 ，编码不可映射问题，以及使用多个外部 jar 的问题。</p>
+</code></pre><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本文主要介绍了如何使用 maven 进行简单的项目构建，较为基础，也往往不能满足项目的基本需求。下一篇就将要针对常见的问题进行解决，比如尝试解决了项目目录不是 Maven 默认目录的问题 ，编码不可映射问题，以及使用外部 jar 的问题。</p>
 
       
     </div>
@@ -598,6 +598,10 @@ Define value for property &apos;package&apos; com.mycompany.app: :
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/19/maven-build-java2/" rel="prev" title="Maven 构建 java 项目（二）">
+                Maven 构建 java 项目（二） <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -688,7 +692,7 @@ Define value for property &apos;package&apos; com.mycompany.app: :
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
