@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianyijian.github.io/"/>
-  <updated>2018-05-18T17:42:01.110Z</updated>
+  <updated>2018-05-29T11:09:49.647Z</updated>
   <id>https://tianyijian.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tianyijian.github.io/2018/05/19/maven-build-java2/"/>
     <id>https://tianyijian.github.io/2018/05/19/maven-build-java2/</id>
     <published>2018-05-19T03:40:39.000Z</published>
-    <updated>2018-05-18T17:42:01.110Z</updated>
+    <updated>2018-05-29T11:09:49.647Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,7 @@
       
         
         
-          &lt;h2 id=&quot;概要&quot;&gt;&lt;a href=&quot;#概要&quot; class=&quot;headerlink&quot; title=&quot;概要&quot;&gt;&lt;/a&gt;概要&lt;/h2&gt;&lt;p&gt;上一篇主要是对 Maven 构建项目的入门理解，这一篇将从实际项目出发，介绍更改默认目录的问题，编码不可映射问题以及使用外部 jar
+          &lt;h2 id=&quot;概要&quot;&gt;&lt;a href=&quot;#概要&quot; class=&quot;headerlink&quot; title=&quot;概要&quot;&gt;&lt;/a&gt;概要&lt;/h2&gt;&lt;p&gt;上一篇主要是对 Maven
         
       
     
